@@ -11,6 +11,7 @@ import javax.inject.Inject;
 import org.camunda.bpm.engine.ProcessEngine;
 import org.camunda.bpm.engine.ProcessEngineConfiguration;
 import org.camunda.bpm.engine.RepositoryService;
+import org.camunda.bpm.engine.RuntimeService;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.jboss.logging.Logger;
 
@@ -19,7 +20,10 @@ import io.quarkus.runtime.StartupEvent;
 @ApplicationScoped
 public class ProcessEngineService implements Serializable {
 
-    private static final Logger LOG = Logger.getLogger(ProcessEngineService.class);
+    private static final long serialVersionUID = -4428518317731241682L;
+
+    @Inject
+    Logger LOG;
 
     private ProcessEngine engine;
 
@@ -55,6 +59,11 @@ public class ProcessEngineService implements Serializable {
     @Produces
     RepositoryService getRepositoryService() {
         return engine.getRepositoryService();
+    }
+
+    @Produces
+    RuntimeService getRuntimeService() {
+        return engine.getRuntimeService();
     }
     
 }
