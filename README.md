@@ -1,10 +1,8 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/markuspauer/quarkus-camunda-bpm)
+# Using Camunda BPM with Quarkus
 
-# quarkus-camunda-bpm project
+This is an example Process-Application that runs Camunda BPM Platform on Quarkus.
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
-
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+Camunda BPM Platform is an Open Source Platform for Workflow and Decision Automation. You can find more Information on this website: https://camunda.com/ . And if you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
 ## Running the application in dev mode
 
