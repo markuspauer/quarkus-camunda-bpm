@@ -5,7 +5,7 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 @Dependent
-@ApplicationPath("/")
+@ApplicationPath("/api")
 public class ProcessEngineApplication extends Application {
     
 }
